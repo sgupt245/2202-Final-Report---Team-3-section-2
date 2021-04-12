@@ -1,10 +1,9 @@
-// Exercise 3: If the video has not been completed, scroll down to:
-//140 - 169: variable set-up  New Veriables for Paper lengths have been created.
-//238 - 246: reset protocols
-//297 - 504: combined code (including exercise 3 and 1)
-//417 - 499: Exercise 1 code (small modifications for reverse length)
-
-
+// Robot Climbing Code
+//138 - 161: variable set-up  New Veriables for Paper lengths have been created.
+//233 - 242: reset protocols (when the override switch is pressed)
+//293 - 541: combined code (mostly small modifications to exercise 3 and 1 of lab 5)
+//417 - 499: Exercise 1 code of lab 5 - ideally for the beacon navigation 
+//656 - 666: Roller state function
 //MSE 2202
 //Western Engineering base code
 //2020 05 13 E J Porter
@@ -653,6 +652,8 @@ void loop()
 
 }
 
+//*******************************************************************************************************
+
 void Roller(){
   if(rollerState == 0){
     rollerState = 1;
@@ -660,3 +661,5 @@ void Roller(){
     rollerState =0;
   }
 }
+
+//***************************************************************************************************************
